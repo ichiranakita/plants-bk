@@ -21,6 +21,7 @@ apply plugin: 'io.spring.dependency-management'
 group = 'com.ichiranakita'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
@@ -31,5 +32,8 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('io.springfox:springfox-swagger2:2.7.0')
+	compile('io.springfox:springfox-swagger-ui:2.7.0')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
